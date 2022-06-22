@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './Portfolio.scss';
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <div className='porfolio'>Portfolio</div>
   )
 }
 

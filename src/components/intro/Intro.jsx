@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './Intro.scss';
 
 const Intro = () => {
   return (
-    <div>Intro</div>
+    <div className='intro'>Intro</div>
   )
 }
 

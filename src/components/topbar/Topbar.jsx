@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './Topbar.scss';
 
 const Topbar = () => {
   return (
-    <div>Topbar</div>
+    <div className='topbar'>Topbar</div>
   )
 }
 
