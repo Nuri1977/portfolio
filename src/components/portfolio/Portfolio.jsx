@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
-import './Portfolio.scss';
+import "./Portfolio.scss";
 import {
   featuredPortfolio,
   webPortfolio,
@@ -9,7 +9,7 @@ import {
   contentPortfolio,
 } from "../../data";
 
-const Portfolio = () => {
+export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
   const list = [
@@ -84,5 +84,3 @@ const Portfolio = () => {
     </div>
   );
 }
-
-export default Portfolio
