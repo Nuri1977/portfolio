@@ -19,7 +19,7 @@
       background-color: crimson;
       border-radius: 50%;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
       float: right;
 
@@ -28,10 +28,11 @@
       }
 
       img {
-        height: 90%;
+        height: 70%;
+        border-radius: 50%;
 
         @include mobile{
-          height: 50%;
+          height: 40%;
         }
       }
     }
