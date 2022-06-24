@@ -1,5 +1,6 @@
 import React from 'react';
 import './Topbar.scss';
+import { FaEnvelope, FaUserAlt} from 'react-icons/fa';
 
 const Topbar = ({menuOpen, setMenuOpen}) => {
 
@@ -10,9 +11,11 @@ const Topbar = ({menuOpen, setMenuOpen}) => {
         <div className="left">
           <a href="#intro" className='logo'>Logo.</a>
           <div className="itemContainer">
+            <FaUserAlt className='icon'/>
             <span>+389 71 241 827</span>
           </div>
           <div className="itemContainer">
+            <FaEnvelope className='icon'/>
             <span>nurilacka@gmail.com</span>
           </div>
         </div>
