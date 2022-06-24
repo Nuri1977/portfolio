@@ -1,6 +1,6 @@
 import React from 'react';
 import './Topbar.scss';
-import { FaEnvelope, FaUserAlt} from 'react-icons/fa';
+import { FaTwitterSquare, FaGithub, FaLinkedin} from 'react-icons/fa';
 
 const Topbar = ({menuOpen, setMenuOpen}) => {
 
@@ -11,12 +11,13 @@ const Topbar = ({menuOpen, setMenuOpen}) => {
         <div className="left">
           <a href="#intro" className='logo'>Logo.</a>
           <div className="itemContainer">
-            <FaUserAlt className='icon'/>
-            <span>+389 71 241 827</span>
+            <a href="https://github.com/Nuri1977" target='_blank' rel="noreferrer" className='icon'><FaGithub className='icon'/></a>
           </div>
           <div className="itemContainer">
-            <FaEnvelope className='icon'/>
-            <span>nurilacka@gmail.com</span>
+            <a href="https://www.linkedin.com/in/nuri-lacka/" target='_blank' rel="noreferrer" className='icon'><FaLinkedin className='icon'/></a>
+          </div>
+          <div className="itemContainer">
+            <a href="https://twitter.com/LackaNuri" target='_blank' rel="noreferrer" className='icon'><FaTwitterSquare className='icon'/></a>
           </div>
         </div>
 
