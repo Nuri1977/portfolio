@@ -7,7 +7,7 @@
   align-items: center;
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
 
     @include mobile{
       font-size: 20px;
@@ -28,7 +28,7 @@
   }
 
   .container {
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,10 +39,11 @@
     }
 
     .item {
-      width: 220px;
-      height: 150px;
+      width: 400px;
+      height: 170px;
       border-radius: 20px;
       border: 1px solid rgb(240, 239, 239);
+      box-shadow: 0px 0px 15px -8px black;
       margin: 10px 20px;
       display: flex;
       align-items: center;
@@ -53,8 +54,8 @@
       cursor: pointer;
 
       @include mobile{
-        width: 130px;
-        height: 100px;
+        width: 250px;
+        height: 120px;
       }
 
       h3 {

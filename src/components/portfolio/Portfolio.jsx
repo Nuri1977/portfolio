@@ -2,58 +2,34 @@ import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./Portfolio.scss";
 import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  reactPortfolio,
+  railsPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("react");
   const [data, setData] = useState([]);
   const list = [
     {
-      id: "featured",
-      title: "Featured",
+      id: "react",
+      title: "React",
     },
     {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
+      id: "rails",
+      title: "Ruby on Rails",
     },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
+      case "react":
+        setData(reactPortfolio);
         break;
-      case "web":
-        setData(webPortfolio);
-        break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
+      case "rails":
+        setData(railsPortfolio);
         break;
       default:
-        setData(featuredPortfolio);
+        setData(reactPortfolio);
     }
   }, [selected]);
 
@@ -72,13 +48,12 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) => (
+          <a href={d.link} target='_blank' rel="noreferrer" className='projLink'>
           <div className="item">
-            <img
-              src={d.img}
-              alt=""
-            />
+              <img src={d.img} alt="" />
             <h3>{d.title}</h3>
           </div>
+          </a>
         ))}
       </div>
     </div>

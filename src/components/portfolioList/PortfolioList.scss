@@ -5,6 +5,7 @@
   margin-right: 50px;
   padding: 7px;
   border-radius: 10px;
+  border: 1px solid $mainColor;
   cursor: pointer;
 
   @include mobile{
