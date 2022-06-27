@@ -15,9 +15,9 @@ const Menu = ({menuOpen, setMenuOpen}) => {
         <li onClick={togleMenu}>
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li onClick={togleMenu}>
+        {/* <li onClick={togleMenu}>
           <a href="#works">Works</a>
-        </li>
+        </li> */}
         <li onClick={togleMenu}>
           <a href="#testimonials">Testimonials</a>
         </li>

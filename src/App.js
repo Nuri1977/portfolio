@@ -18,7 +18,7 @@ function App() {
       <main className="sections">
         <Intro />
         <Portfolio />
-        <Works />
+        {/* <Works /> */}
         <Testimonials />
         <Contact />
       </main>
