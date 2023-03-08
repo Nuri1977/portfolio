@@ -72,8 +72,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Inspired by original design for Creative Commons by [Murat Korkmaz](https://www.behance.net/muratk) on [Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign).
-- Inspiration: Microverse
+- Inspired by original design from [Lama Dev](https://www.youtube.com/watch?v=7WwtzsSHdpI).
 
 ## 📝 License
 
