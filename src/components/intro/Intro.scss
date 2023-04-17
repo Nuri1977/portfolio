@@ -26,15 +26,6 @@
         align-items: center;
       }
 
-      img {
-        width: 250px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-        @include mobile{
-          width: 200px;
-        }
-      }
-
       .social {
         display: flex;
         align-items: center;
@@ -64,6 +55,15 @@
       @include mobile{
         padding-left: 0;
         align-items: center;
+      }
+
+      img {
+        width: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        @include mobile{
+          width: 50px;
+        }
       }
 
       h1 {
