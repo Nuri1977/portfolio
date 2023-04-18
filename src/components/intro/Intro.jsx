@@ -22,6 +22,10 @@ import {
 const Intro = () => {
   const textRef = useRef();
 
+  const handleClick = () => {
+    window.open('https://docs.google.com/document/d/15rawdg6ZR7f1yhgi1Yfu0smeLxkTxg3wYdr3UwEMXiY/edit?usp=sharing', '_blank');
+  };
+
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
@@ -35,6 +39,9 @@ const Intro = () => {
     <div className='intro' id='intro'>
       <div className='left'>
         <div className='imgContainer'>
+          <div>
+            <h1>Skills</h1>
+          </div>
           <div className='social'>
             <SiJavascript className='icons' />
             <SiTypescript className='icons' />
@@ -60,16 +67,20 @@ const Intro = () => {
       </div>
       <div className='right'>
         <div className='wrapper'>
-          <img src='assets/nuri.jpg' alt='' />
+          <img src='assets/nuri.jpg' alt='nuri'/>
           <h2>Hi There, I'm </h2>
           <h1>Nuri Lacka</h1>
           <h3>
             Front-end <span ref={textRef}></span>
           </h3>
+          <button type="button" onClick={handleClick}>
+            View Resume
+          </button>
         </div>
         <a href='#portfolio'>
           <img src='assets/down.png' alt='' />
         </a>
+
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ export const reactPortfolio = [
     id: 1,
     title: 'E-commerce',
     link: 'https://github.com/Nuri1977/Tech-Ecommerce',
-    img: 'assets/p-appoinments.png',
+    img: 'assets/p-ecommerce.jpg',
   },
   {
     id: 2,
