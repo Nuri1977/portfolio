@@ -1,6 +1,5 @@
 import React from 'react';
 import './Topbar.scss';
-import { FaTwitterSquare, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -8,38 +7,12 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
       <div className='wrapper'>
         <div className='left'>
           <a href='#intro' className='logo'>
-            Logo.
+            {!menuOpen ? (
+              <img src="assets/nl-high-resolution-logo-black-on-transparent-background.png" alt="logo" height='40px'/>
+            ) : (
+              <img src="assets/nl-high-resolution-logo-white-on-transparent-background.png" alt="logo" height='40px'/>
+            )}
           </a>
-          <div className='itemContainer'>
-            <a
-              href='https://github.com/Nuri1977'
-              target='_blank'
-              rel='noreferrer'
-              className='icon'
-            >
-              <FaGithub className='icon' />
-            </a>
-          </div>
-          <div className='itemContainer'>
-            <a
-              href='https://www.linkedin.com/in/nuri-lacka/'
-              target='_blank'
-              rel='noreferrer'
-              className='icon'
-            >
-              <FaLinkedin className='icon' />
-            </a>
-          </div>
-          <div className='itemContainer'>
-            <a
-              href='https://twitter.com/LackaNuri'
-              target='_blank'
-              rel='noreferrer'
-              className='icon'
-            >
-              <FaTwitterSquare className='icon' />
-            </a>
-          </div>
         </div>
 
         <div className='right'>

@@ -2,19 +2,19 @@ export const reactPortfolio = [
   {
     id: 1,
     title: 'E-commerce',
-    link: 'https://github.com/Nuri1977/Tech-Ecommerce',
+    link: 'https://shopping-87340.web.app/',
     img: 'assets/p-ecommerce.jpg',
   },
   {
     id: 2,
-    title: 'Appointments',
-    link: 'https://github.com/clintonjosephs/book-a-doctor-frontend',
-    img: 'assets/p-appoinments.png',
+    title: 'Leet Code Clone',
+    link: 'https://leetcode-clone-navy.vercel.app/',
+    img: 'assets/leet-code.png',
   },
   {
     id: 3,
     title: 'Food order',
-    link: 'https://github.com/Nuri1977/react-food-order-app',
+    link: 'https://gracious-poincare-488dff.netlify.app/',
     img: 'assets/p-food-order.jpg',
   },
   {

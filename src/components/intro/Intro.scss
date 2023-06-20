@@ -1,11 +1,11 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: white;
+  background-color: $lightColor;
   display: flex;
 
   @include mobile{
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -26,15 +26,31 @@
         align-items: center;
       }
 
+      .skillsTitle {
+        font-size: 50px;
+    
+        @include mobile{
+          font-size: 32px;
+        }
+      }
+
       .social {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100px;
 
+        @include mobile{
+          height: 50px;
+        }
+
         .icons {
           font-size: 36px;
           margin-right: 10px;
+
+          @include mobile{
+            font-size: 24px;
+          }
         }
       }
     }
@@ -78,6 +94,10 @@
       }
       h2 {
         font-size: 35px;
+
+        @include mobile{
+          font-size: 24px;
+        }
       }
       h3 {
         font-size: 30px;
@@ -105,6 +125,31 @@
         }
       }
 
+      .socialLinks {
+        display: flex;
+        margin-top: 20px;
+
+        .icon {
+          text-decoration: none;
+          color: inherit;
+
+          .icons {
+            font-size: 32px;
+            margin-right: 5px;
+            transition: 0,5s ease;
+
+            @include mobile{
+              font-size: 24px;
+            }
+
+            &:hover {
+              background-color: $mainColor;
+              color: white;
+            }
+          }
+        }
+      }
+
       button {
         width: 150px;
         height: 30px;
@@ -115,16 +160,29 @@
         margin-top: 20px;
         font-weight: 500;
         cursor: pointer;
+        transition: all 1s ease;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   
         &:focus {
           outline: none;
         }
+
+        &:hover {
+          background-color: white;
+          color: $mainColor;
+          border: $mainColor solid 1px;
+          
+        }
       }
     }
-    a {
+    .downArrow {
       position: absolute;
       bottom: 10px;
       left: 40%;
+
+      @include mobile{
+        display: none;
+      }
 
       img {
         width: 30px;
